@@ -1,0 +1,43 @@
+.baseWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+
+  &.primerWrapper {
+    background: #8e2de2;
+    background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+  }
+
+  &.secondaryWrapper {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  }
+}
+
+.animationIn {
+  animation: inAnimation 1s ease-in-out;
+}
+
+@keyframes inAnimation {
+  from {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .baseWrapper {
+    width: 300px;
+  }
+}
