@@ -1,0 +1,5 @@
+export { Summary } from './Summary/Summary'
+export { FullName } from './FullName/FullName'
+export { Email } from './Email/Email'
+export { PhoneNumber } from './Phone/PhoneNumber'
+export { Salary } from './Salary/Salary'
