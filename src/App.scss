@@ -1,11 +1,12 @@
-@import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
+@import 'https://fonts.googleapis.com/css?family=Inter';
 
 * {
   box-sizing: border-box;
 }
 
-$font-stack: 'Architects Daughter', sans-serif;
+$font-stack: 'Inter', system-ui, sans-serif;
 $background-color: #000;
+$page-color: linear-gradient(315deg, #130f40 0%, #000 74%);
 
 html,
 body {
@@ -16,9 +17,8 @@ body {
 }
 
 body {
-  font-family: 'Architects Daughter', sans-serif;
-  background-image: linear-gradient(315deg, #130f40 0%, #000 74%);
+  font-family: $font-stack;
+  background-image: $page-color;
   background-attachment: fixed;
-  color: #fff;
   height: 100%;
 }
