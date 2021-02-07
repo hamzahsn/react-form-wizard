@@ -1,0 +1,16 @@
+.error {
+  color: red;
+}
+
+.nextButton {
+  animation: buttonAnimation 500ms ease-in-out;
+}
+
+@keyframes buttonAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
