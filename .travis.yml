@@ -22,6 +22,7 @@ cache:
 
 script:
   - npm i
+  - npm run test
   - npm run build:form
 
 deploy:
