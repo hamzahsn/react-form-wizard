@@ -22,7 +22,7 @@ cache:
 
 script:
   - npm i
-  - npm run build-form
+  - npm run build:form
 
 deploy:
   provider: pages
