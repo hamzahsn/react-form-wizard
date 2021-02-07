@@ -1,0 +1,49 @@
+$form-data-margin: 15px 10px;
+
+.baseButton {
+  /* Font & Text*/
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: normal;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-indent: 0px;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-spacing: 0px;
+  margin: $form-data-margin;
+  padding: 15px 15px;
+  text-align: center;
+  min-width: 50px;
+
+  /* Color & Background */
+  background-color: #130f40;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+
+  /* Effects */
+  border-radius: 25px;
+
+  &.primary {
+    background: #0d1014;
+    color: #fff;
+  }
+
+  &.secondary {
+    background: #fff;
+    color: #0d1014;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .baseButton {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 15px;
+  }
+}
