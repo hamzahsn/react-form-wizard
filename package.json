@@ -4,7 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/**/*.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "style:lint": "stylelint  \"./src/**/*.{css,scss,sass}\" --fix --formatter verbose",
+    "build:css": "node-sass src/ -o src/",
+    "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
+    "dev:form": "cross-env NODE_ENV=development webpack serve --config config/webpack.config.js",
+    "start:form": "run-p watch:css dev:form",
+    "build:form": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest  --watch --detectOpenHandles",
+    "test:coverage": "cross-env NODE_ENV=test jest  --watchAll --coverage",
+    "test:update": "cross-env NODE_ENV=test jest  --updateSnapshot"
   },
   "engines": {
     "node": ">=12.18.3"
