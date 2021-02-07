@@ -1,0 +1,16 @@
+.summaryWrapper {
+  display: flex;
+}
+
+.summaryName {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+}
+
+.summaryValue {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
