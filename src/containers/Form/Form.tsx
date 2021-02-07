@@ -6,7 +6,7 @@ import { ProgressBar } from '@styles/ProgressBar/ProgressBar'
 import styles from './Form.scss'
 
 export function Form() {
-  const [step, setStep] = useState(4)
+  const [step, setStep] = useState(1)
   const [progressBarStatus, setProgressBarStatus] = useState(0)
   const [formValues, setFormValues] = useState<ITenant>({
     fullName: '',
